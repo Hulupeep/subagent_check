@@ -189,6 +189,25 @@ The validator automatically converts JSON to Markdown format with proper structu
 5. **Define Clear Outputs**: Specify what the agent should produce
 6. **Test Your Agents**: Run the validator after creating or modifying agents
 
+## 🌟 Real-World Example: Cynical-QA Agent
+
+The **cynical-qa.md** agent included in this repository is a perfect example of how the agent-config-validator improves subagents. This agent was originally created by Claude Code with some configuration issues, then enhanced by the validator.
+
+### What the Validator Fixed:
+
+1. **Enhanced Proactive Triggers**: Added "MUST BE USED PROACTIVELY" language to ensure the agent automatically activates after code changes
+2. **Clear Activation Scenarios**: Specified exactly when to trigger (after implementing features, fixing bugs, or making UI changes)
+3. **Comprehensive Examples**: Added detailed interaction examples showing when and how the agent should be used
+4. **Tool Specifications**: Ensured all required tools (Read, Grep, Bash, WebSearch) were properly listed
+
+The cynical-qa agent is now a highly effective QA tool that:
+- Automatically challenges claims about "fixed" or "working" code
+- Demands concrete evidence (screenshots, test outputs, git diffs)
+- Provides specific verification commands
+- Uses a structured output format for consistent reviews
+
+Check out `cynical-qa.md` in this repository to see a fully validated, production-ready subagent!
+
 ## 🤝 Contributing
 
 Feel free to submit issues or pull requests to improve the validator!
